@@ -384,6 +384,30 @@
   },
   {
     "repository": "Git",
+    "url": "https://github.com/mozilla-mobile/firefox-ios.git",
+    "path": "firefox-ios",
+    "branch": "master",
+    "maintainer": "sarentz@mozilla.com",
+    "compatibility": {
+      "3.1": {
+        "commit": "2f1b9f0dfdec1776b7a44a7eb6f6906f5855e3f5"
+      }
+    },
+    "platforms": [
+      "Darwin"
+    ],
+    "actions": [
+      {
+        "action": "BuildXcodeProjectScheme",
+        "project": "Client.xcodeproj",
+        "scheme": "Fennec",
+        "destination": "generic/platform=iOS",
+        "configuration": "Release"
+      }
+    ]
+  },
+  {
+    "repository": "Git",
     "url": "https://github.com/groue/GRDB.swift.git",
     "path": "GRDB.swift",
     "branch": "master",
